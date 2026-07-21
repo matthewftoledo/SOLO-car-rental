@@ -22,4 +22,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px;
+}
+
+.nav__img {
+    width: 145px;
+    height: auto;
+    display: block;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__btns__register {
+  background-color: #ff4d30;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(255, 77, 48, 0.35);
 }
