@@ -253,3 +253,27 @@ header {
   color: #6b7280;
 }
 
+/* Banner */
+.banner {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 56px 28px;
+  text-align: center;
+}
+
+.banner__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.banner__title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.banner__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+}
