@@ -254,7 +254,7 @@ header {
 }
 
 /* Banner */
-.banner {
+#banner {
   background-color: #2d2d2d;
   color: white;
   padding: 56px 28px;
@@ -279,7 +279,7 @@ header {
 }
 
 /* Cars */
-.cars {
+#cars {
   padding: 100px 0;
   background-color: #fff;
   background-image: url("images/choose-bg.png");
@@ -501,4 +501,12 @@ header {
   margin-left: auto;
   color: #ff4d30;
   font-size: 48px;
+}
+
+/* Download */
+#download {
+  background-image: url(images/download-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
