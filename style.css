@@ -510,3 +510,51 @@ header {
   background-repeat: no-repeat;
   background-position: top;
 }
+
+.download__row {
+  display: flex;
+  align-items: center;
+  min-height: 462px;
+}
+
+.download__text {
+  width: 100%;
+  max-width: 560px;
+}
+
+.download__text__title {
+  color: #010103;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.download__text__para {
+  color: #706f7b;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.download__text__links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.download__text__link {
+  display: inline-flex;
+  transition: transform 300ms ease;
+}
+
+.download__text__link:hover {
+  transform: translateY(-4px);
+}
+
+.download__text__link__img {
+  width: 220px;
+  height: auto;
+  display: block;
+}
