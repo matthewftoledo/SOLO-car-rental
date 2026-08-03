@@ -561,6 +561,8 @@ header {
 
 /* Footer */
 footer {
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   padding: 80px 0;
 }
@@ -591,9 +593,14 @@ footer {
   gap: 8px;
 }
 
-.footer__intro__para,
-.footer__email__para {
+.footer__intro__para {
   color: #706f7b;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.footer__email__para {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -610,9 +617,9 @@ footer {
 .footer__intro__link,
 .footer__company__link,
 .footer__hours__time {
-  color: #010103;
-  font-size: 15px;
-  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -624,15 +631,15 @@ footer {
 .footer__email__form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .footer__email__form__input {
   width: 100%;
   border: none;
   background-color: #ececec;
-  padding: 18px 24px;
-  font-size: 14px;
+  padding: 12px 18px;
+  font-size: 12px;
   outline: none;
 }
 
@@ -641,7 +648,7 @@ footer {
   border: none;
   background-color: #ff4d30;
   color: #fff;
-  padding: 18px 24px;
+  padding: 12px 18px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
