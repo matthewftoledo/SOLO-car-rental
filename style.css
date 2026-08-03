@@ -560,3 +560,97 @@ header {
 }
 
 /* Footer */
+footer {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+.footer__content h4,
+.footer__intro__title,
+.footer__company__title,
+.footer__hours__title,
+.footer__email__title {
+  color: #010103;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.footer__intro__title {
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__intro__para,
+.footer__email__para {
+  color: #706f7b;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.footer__intro__links,
+.footer__company__links,
+.footer__hours__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__intro__link,
+.footer__company__link,
+.footer__hours__time {
+  color: #010103;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer__intro__link:hover,
+.footer__company__link:hover {
+  color: #ff4d30;
+}
+
+.footer__email__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__email__form__input {
+  width: 100%;
+  border: none;
+  background-color: #ececec;
+  padding: 18px 24px;
+  font-size: 14px;
+  outline: none;
+}
+
+.footer__email__form__submit {
+  width: 100%;
+  border: none;
+  background-color: #ff4d30;
+  color: #fff;
+  padding: 18px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(255, 77, 48, 0.35);
+  transition: 300ms ease;
+}
+
+.footer__email__form__submit:hover {
+  background-color: #fa4226;
+  box-shadow: 0 10px 15px rgba(255, 77, 48, 0.45);
+}
