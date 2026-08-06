@@ -70,6 +70,14 @@ nav {
   box-shadow: 0 10px 15px rgba(255, 77, 48, 0.45);
 }
 
+.nav__menu__btn {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 /* Hero */
 header {
   position: relative;
@@ -639,7 +647,7 @@ footer {
   border: none;
   background-color: #ececec;
   padding: 12px 18px;
-  font-size: 12px;
+  font-size: 11px;
   outline: none;
 }
 
@@ -660,4 +668,69 @@ footer {
 .footer__email__form__submit:hover {
   background-color: #fa4226;
   box-shadow: 0 10px 15px rgba(255, 77, 48, 0.45);
+}
+
+/* XL Screens */
+@media (max-width: 1280px) {
+  
+}
+
+/* LG Screens */
+@media (max-width: 1024px) {
+  .nav__links,
+  .nav__btns {
+    display: none;
+  }
+
+  .nav__menu__btn {
+    display: block;
+  }
+
+  .nav__hamburger {
+    display: block;
+  }
+
+  .header__row {
+    align-items: center;
+  }
+
+  .header__text {
+    width: 45%;
+  }
+
+  .header__text__title {
+    font-size: 42px;
+  }
+
+  .header__img__wrapper {
+    width: 58%;
+  }
+
+  .header-bg {
+    width: 55%;
+    min-width: 560px;
+  }
+
+  .features__list {
+    gap: 32px;
+  }
+
+  .cars__content {
+    gap: 48px;
+    padding: 0;
+  }
+
+  .footer__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets Screens */
+@media (max-width: 768px) {
+  
+}
+
+/* Hand held Screens */
+@media (max-width: 480px) {
+  
 }
