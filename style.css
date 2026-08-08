@@ -119,8 +119,8 @@ header {
 }
 
 .header__text__title {
-  font-size: 50px;
-  line-height: 1.15;
+  font-size: 52px;
+  line-height: 1.2;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -672,7 +672,6 @@ footer {
 
 /* XL Screens */
 @media (max-width: 1280px) {
-  
 }
 
 /* LG Screens */
@@ -682,10 +681,7 @@ footer {
     display: none;
   }
 
-  .nav__menu__btn {
-    display: block;
-  }
-
+  .nav__menu__btn,
   .nav__hamburger {
     display: block;
   }
@@ -698,10 +694,6 @@ footer {
     width: 45%;
   }
 
-  .header__text__title {
-    font-size: 42px;
-  }
-
   .header__img__wrapper {
     width: 58%;
   }
@@ -711,26 +703,150 @@ footer {
     min-width: 560px;
   }
 
-  .features__list {
-    gap: 32px;
+  .header__text__title {
+    font-size: 52px;
+    line-height: 1.2;
   }
 
+  /* features should wrap: 2 on top, 1 below */
+  .feature {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .feature__title,
+  .feature__para {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
+  }
+
+  .feature__para {
+    line-height: 1.6;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px 48px;
+    justify-items: center;
+  }
+
+  .features__item {
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .features__item:nth-child(3) {
+    grid-column: 1 / 2;
+  }
+
+  .banner__title {
+    font-size: 52px;
+    line-height: 1.15;
+  }
+
+  /* cars section should stack vertically */
   .cars__content {
-    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     padding: 0;
+    text-align: center;
+  }
+
+  .cars__img {
+    max-width: 100%;
+  }
+
+  .cars__text {
+    max-width: 560px;
+    text-align: center;
+  }
+
+  .cars__features {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .cars__feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    max-width: 360px;
+  }
+
+  /* testimonials should stack vertically */
+  .testimonials__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  .testimonial__card {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .download__row {
+    align-items: center;
+  }
+
+  .download__text {
+    width: 48%;
+  }
+
+  .download__img__wrapper {
+    width: 48%;
+  }
+
+  .download__text__links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .download__text__link {
+    display: block;
+  }
+
+  .download__text__link__img {
+    display: block;
+    width: auto;
+  }
+
+  /* app buttons horizontal */
+  .download__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
   .footer__row {
     grid-template-columns: repeat(2, 1fr);
+    gap: 56px 80px;
   }
 }
 
 /* Tablets Screens */
 @media (max-width: 768px) {
-  
 }
 
 /* Hand held Screens */
 @media (max-width: 480px) {
-  
 }
